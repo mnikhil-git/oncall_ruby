@@ -1,0 +1,169 @@
+.round {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.container {
+	width: 960px;
+}
+
+body {
+	background: #EEE;
+}
+
+a {
+	color: #06C;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #05B;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #06C;
+}
+
+
+section {
+	margin-top: 0;
+	font-size: 120%;
+	padding: 1em 0;
+}
+
+section h1 {
+	font-size: 200%;
+}
+
+
+
+/* header */
+
+header {
+	padding-top: 20px;
+}
+
+header h1 {
+	display: inline;
+	padding: 5px;
+	font-size: 50px;
+	font-weight: bold;
+	font-family: 'Pacifico', arial, serif;
+	text-shadow: 2px 2px 2px #004;
+}
+
+header a:hover {
+	text-decoration: none;
+	text-shadow: 3px 1px 2px #004;
+}
+
+header img {
+	padding: 5px;
+}
+
+
+
+/* navigation */
+
+nav {
+	float: right;
+	background: #FFF;
+}
+
+nav {
+	padding: 0 0.7em;
+	white-space: nowrap;
+}
+
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+nav ul li a:visited {
+  color: #06F;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+/* footer */
+
+footer {
+	text-align: center;
+	margin-top: 10px;
+	width: 960px;
+	margin: 0px auto;
+}
+
+footer nav {
+	float: none;
+	background: transparent;
+}
+
+
+
+
+/* errors */
+
+.field_with_errors {
+  margin-top: 10px;
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+.field_with_errors label {
+  color: #fff;
+}
+
+#error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}

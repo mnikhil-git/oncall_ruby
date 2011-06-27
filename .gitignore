@@ -2,6 +2,3 @@
 db/*.sqlite3
 log/*.log
 tmp/**/*
-*.class
-*.pyc
-*.pyo
