@@ -54,7 +54,7 @@ header h1 {
 	text-shadow: 2px 2px 2px #004;
 }
 
-header a:hover {
+header h1 a:hover {
 	text-decoration: none;
 	text-shadow: 3px 1px 2px #004;
 }

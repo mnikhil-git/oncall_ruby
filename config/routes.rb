@@ -1,14 +1,15 @@
 Oncall::Application.routes.draw do
+
+  resource :account, :controller => "users"
+  resource :users
+  resources :user_sessions, :only => [:new, :create, :destroy]
   
-  get "pages/home"
-
-  get "pages/contact"
-
-  get "pages/help"
-
+  match 'login'  => "user_sessions#new"
+  match 'logout' => "user_sessions#destroy"
+  
   match '/contact', :to => 'pages#contact'
-  match '/about', :to => 'pages#about'
-  match '/help', :to => 'pages#help'
+  match '/about',   :to => 'pages#about'
+  match '/help',    :to => 'pages#help'
 
   root :to => "pages#home"
 

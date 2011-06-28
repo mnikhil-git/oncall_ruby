@@ -2,9 +2,20 @@
   <h1><%= link_to "onCall", root_path %></h1>
   <nav class="round">
     <ul>
+      <% if current_user %>
+      	<%= "Hello #{current_user.email}." %>
+      <% end %>
       <li><%= link_to "Home", root_path %></li>
       <li><%= link_to "Help", help_path %></li>
-      <li><%= link_to "Login", "#" %></li>
+      <% if current_user %>
+      	<li>
+      		<%= link_to "My Account", account_path %>
+      		<%= link_to "Logout", logout_path, :method => :delete %>
+      	</li>
+      <% else %>
+      	<li><%= link_to "Register", new_account_path %></li>
+      	<li><%= link_to "Login", new_user_session_path %></li>
+      <% end %>
     </ul>
   </nav>
 </header>
